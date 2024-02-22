@@ -1,4 +1,8 @@
 const typeDefs = `#graphql
+ type ChuquicamataItem {
+    url: String
+    title: String
+  }
   type Book {
     title: String
     author: String
@@ -8,7 +12,7 @@ const typeDefs = `#graphql
   }
 
   type Mutation {
-    triggerChuquicamata: Int
+    triggerChuquicamata: [ChuquicamataItem]
   }
 `;
 

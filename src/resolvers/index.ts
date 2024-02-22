@@ -1,3 +1,5 @@
+import { triggerChuquicamata } from './mutations';
+
 const books = [
   {
     title: 'The Awakening',
@@ -14,7 +16,7 @@ const resolvers = {
     books: () => books,
   },
   Mutation: {
-    triggerChuquicamata: () => 1,
+    triggerChuquicamata,
   },
 };
 
