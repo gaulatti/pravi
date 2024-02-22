@@ -1,7 +1,6 @@
-import { sourceBBCL } from './bbcl';
 import { sourceCNN } from './cnn';
-import { sourceReuters } from './reuters';
+import { sourceNYT } from './nyt';
 
-const sources = [sourceBBCL, sourceCNN, sourceReuters];
+const sources = [sourceCNN, sourceNYT];
 
 export { sources };
