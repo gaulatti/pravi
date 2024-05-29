@@ -2,9 +2,11 @@
   "name": "pravi",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/modules/index.js",
+  "types": "dist/modules/index.d.ts",
   "scripts": {
     "compile": "tsc",
+    "poopo": "npm run compile && node ./dist/modules/poopo/index.js",
     "start": "npm run compile && node ./dist/server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
